@@ -32,3 +32,15 @@ Dokumen ini berisi panduan penggunaan sistem EMart bagi pengguna.
 
 ## 7. Logout
 Klik tombol logout untuk keluar dari sistem
+# Interface Login EMart
+
+Halaman login digunakan untuk mengakses sistem EMart. 
+User harus memasukkan username dan password untuk masuk ke sistem.
+
+Komponen pada halaman login:
+1. Field Username
+2. Field Password
+3. Tombol Login
+
+Tujuan Interface:
+Memudahkan user melakukan autentikasi sebelum masuk ke sistem.
