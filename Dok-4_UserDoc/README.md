@@ -44,3 +44,31 @@ Komponen pada halaman login:
 
 Tujuan Interface:
 Memudahkan user melakukan autentikasi sebelum masuk ke sistem.
+User Characteristic
+
+1. Kemudahan penggunaan
+Interface login mudah digunakan oleh user
+
+2. Kejelasan tampilan
+Form login terlihat jelas dan sederhana
+
+3. Konsistensi
+Tampilan input seragam
+
+4. Navigasi
+User langsung memahami fungsi login
+
+5. Responsivitas
+Tombol login mudah diakses
+
+6. Learnability
+User baru mudah memahami penggunaan
+
+7. Efisiensi
+Login dapat dilakukan dengan cepat
+
+8. Error Prevention
+Input dibatasi hanya username dan password
+
+9. User Friendly
+Tampilan sederhana dan mudah dipahami
