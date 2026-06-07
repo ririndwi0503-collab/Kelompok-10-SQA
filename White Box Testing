@@ -17,118 +17,153 @@ Tujuan White Box Testing:
 - Memastikan proses input dan output berjalan dengan benar.
 - Mengurangi kemungkinan error pada aplikasi.
 
+## Objek Pengujian
+
+Objek pengujian pada White Box Testing ini adalah sistem EMart yang telah dibuat pada project sebelumnya. Pengujian difokuskan pada fitur Login, Register, dan Home untuk memastikan logika program, alur proses, dan pengolahan data berjalan sesuai dengan kebutuhan sistem.
+
 # Model White Box Testing
 
 ## 1. Desk Checking
+
 Desk Checking adalah salah satu model pengujian bagi pembuat software yang telah memahami bahasa pemrograman dengan baik. Pengujian ini berfokus pada pemeriksaan logika program serta nilai variabel pada input dan output yang dibutuhkan aplikasi.
 
 Desk Checking dilakukan secara manual tanpa menjalankan program secara langsung. Programmer memeriksa kode program satu per satu untuk menemukan kesalahan logika maupun kesalahan penulisan kode.
 
-Contoh sederhana Desk Checking:
+Penerapan pada Sistem EMart:
+Desk Checking digunakan untuk memeriksa logika validasi username dan password pada fitur Login.
 
-```java
-int a = 10;
-int b = 5;
-int hasil = a + b;
-
-System.out.println(hasil);
-```
-
-Hasil pemeriksaan:
-- Nilai a = 10
-- Nilai b = 5
-- hasil = 15
-
-Output:
-```java
-15
-```
-
-## 2. Code Walkthrough
-Code Walkthrough merupakan teknik review kode secara formal maupun informal yang dilakukan bersama developer dan tim terkait untuk memahami logika kode, mengidentifikasi potensi error, serta meningkatkan kualitas program secara keseluruhan.
-
-Pada teknik ini, programmer menjelaskan alur program kepada anggota tim agar kesalahan dapat ditemukan bersama-sama.
-
-Contoh Code Walkthrough:
-
-```java
-int umur = 18;
-
-if (umur >= 17) {
-   System.out.println("Boleh Membuat SIM");
-} else {
-   System.out.println("Belum Boleh Membuat SIM");
-}
-```
-
-Penjelasan:
-- Jika umur lebih besar atau sama dengan 17 maka output:
-  "Boleh Membuat SIM"
-- Jika kurang dari 17 maka output:
-  "Belum Boleh Membuat SIM"
-
-## 3. Formal Inspection
-Formal Inspection adalah teknik pengujian yang berfokus pada pemeriksaan kelengkapan, ketepatan, dan format data yang ditampilkan maupun diterima oleh aplikasi.
-
-Pengujian dilakukan secara terstruktur dengan tujuan memastikan program sesuai dengan standar yang telah ditentukan.
-
-Contoh pemeriksaan data login:
+Contoh Desk Checking:
 
 ```java
 String username = "admin";
 String password = "12345";
 
-if (username.equals("admin") && password.equals("12345")) {
-   System.out.println("Login Berhasil");
-} else {
-   System.out.println("Login Gagal");
+if(username.equals("admin") && password.equals("12345")){
+    System.out.println("Login Berhasil");
+}else{
+    System.out.println("Login Gagal");
+}
+```
+
+Hasil Pemeriksaan:
+
+* Username = admin
+* Password = 12345
+* Kondisi bernilai TRUE
+
+Output:
+
+```java
+Login Berhasil
+```
+
+## 2. Code Walkthrough
+
+Code Walkthrough merupakan teknik review kode secara formal maupun informal yang dilakukan bersama developer dan tim terkait untuk memahami logika kode, mengidentifikasi potensi error, serta meningkatkan kualitas program secara keseluruhan.
+
+Pada teknik ini, programmer menjelaskan alur program kepada anggota tim agar kesalahan dapat ditemukan bersama-sama.
+
+Penerapan pada Sistem EMart:
+Code Walkthrough dilakukan pada fitur Register untuk memastikan proses pendaftaran akun berjalan dengan baik.
+
+Contoh Code Walkthrough:
+
+```java
+String email = "user@gmail.com";
+
+if(email.contains("@")){
+    System.out.println("Registrasi Berhasil");
+}else{
+    System.out.println("Email Tidak Valid");
+}
+```
+
+Penjelasan:
+
+* Jika email mengandung karakter @ maka registrasi berhasil.
+* Jika email tidak mengandung karakter @ maka sistem menampilkan email tidak valid.
+
+
+## 3. Formal Inspection
+
+Formal Inspection adalah teknik pengujian yang berfokus pada pemeriksaan kelengkapan, ketepatan, dan format data yang ditampilkan maupun diterima oleh aplikasi.
+
+Pengujian dilakukan secara terstruktur dengan tujuan memastikan program sesuai dengan standar yang telah ditentukan.
+
+Penerapan pada Sistem EMart:
+Formal Inspection digunakan untuk memeriksa validasi data login pengguna.
+
+Contoh Pemeriksaan Data Login:
+
+```java
+String username = "admin";
+String password = "12345";
+
+if(username.equals("admin") && password.equals("12345")){
+    System.out.println("Login Berhasil");
+}else{
+    System.out.println("Login Gagal");
 }
 ```
 
 Hasil:
-- Username dan password benar → Login Berhasil
-- Username atau password salah → Login Gagal
+
+* Username dan password benar → Login Berhasil
+* Username atau password salah → Login Gagal
 
 ## 4. Control Flow Testing
-Control Flow Testing berfokus pada pemeriksaan alur logika program (control flow) untuk memastikan semua jalur eksekusi berjalan dengan benar dan tidak terjadi loop tak terhingga (infinite loop).
 
-Contoh program:
+Control Flow Testing berfokus pada pemeriksaan alur logika program untuk memastikan semua jalur eksekusi berjalan dengan benar.
+
+Penerapan pada Sistem EMart:
+Control Flow Testing digunakan untuk memeriksa alur Login Berhasil dan Login Gagal.
+
+Contoh Program:
 
 ```java
-int nilai = 80;
+boolean login = true;
 
-if (nilai >= 75) {
-   System.out.println("Lulus");
-} else {
-   System.out.println("Tidak Lulus");
+if(login){
+    System.out.println("Masuk ke Halaman Home");
+}else{
+    System.out.println("Tetap di Halaman Login");
 }
 ```
 
-Jalur program:
-- Jalur 1 → kondisi TRUE → output "Lulus"
-- Jalur 2 → kondisi FALSE → output "Tidak Lulus"
+Jalur Program:
+
+* Jalur 1 → Login berhasil → Home
+* Jalur 2 → Login gagal → Login kembali
+
 
 ## 5. Data Flow Testing
+
 Data Flow Testing merupakan teknik pengujian yang berfokus pada aliran data dalam sistem. Pengujian dilakukan untuk memastikan variabel digunakan dengan benar serta mengidentifikasi kemungkinan error atau perilaku sistem yang tidak sesuai.
 
-Contoh program:
+Penerapan pada Sistem EMart:
+Data Flow Testing digunakan untuk memeriksa aliran data username dan password dari form Login menuju proses validasi sistem.
+
+Contoh Program:
 
 ```java
-int harga = 5000;
-int jumlah = 3;
-int total = harga * jumlah;
+String username = "admin";
+String password = "12345";
 
-System.out.println(total);
+String dataLogin = username + password;
+
+System.out.println(dataLogin);
 ```
 
 Penjelasan:
-- harga = 5000
-- jumlah = 3
-- total = 15000
+
+* username = admin
+* password = 12345
+* dataLogin = admin12345
 
 Output:
+
 ```java
-15000
+admin12345
 ```
 
 ## Kelebihan White Box Testing
@@ -146,6 +181,9 @@ Output:
 - Tidak fokus pada tampilan antarmuka aplikasi.
 
 ## Kesimpulan
-White Box Testing merupakan metode pengujian perangkat lunak yang berfokus pada struktur internal dan source code program. Pengujian ini dilakukan untuk memastikan logika program, alur data, percabangan, dan proses perulangan berjalan dengan baik.
+
+White Box Testing merupakan metode pengujian perangkat lunak yang berfokus pada struktur internal dan source code program. Pengujian ini dilakukan untuk memastikan logika program, alur data, percabangan, dan proses pengolahan data berjalan dengan baik.
+
+Pada sistem EMart, White Box Testing diterapkan pada fitur Login, Register, dan Home menggunakan metode Desk Checking, Code Walkthrough, Formal Inspection, Control Flow Testing, dan Data Flow Testing. Pengujian ini bertujuan untuk memastikan setiap fungsi berjalan sesuai dengan kebutuhan sistem dan pengguna.
 
 Dengan White Box Testing, kesalahan pada kode program dapat ditemukan lebih awal sehingga kualitas perangkat lunak menjadi lebih baik, lebih stabil, dan sesuai dengan kebutuhan pengguna.
