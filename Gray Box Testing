@@ -1,0 +1,17 @@
+# Gray Box Testing
+
+## Objek Pengujian
+
+1. Login dan Script
+2. Register dan Script
+3. Home dan Script
+
+## Metode
+
+- Integration Testing
+- Session Testing
+- Data Flow Testing
+
+## Tujuan
+
+Memastikan integrasi antara tampilan HTML, CSS, dan JavaScript berjalan dengan baik.
