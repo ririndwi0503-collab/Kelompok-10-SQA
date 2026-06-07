@@ -15,10 +15,10 @@ Repository ini digunakan untuk mendokumentasikan proses Software Quality Testing
 - script.js
 - style.css
 
-**_Tujuan Pengujian_ **
+**_Tujuan Pengujian_**
 - Memastikan sistem berjalan sesaui kebutuhan pengguna.
 - Menemukan bug atau kesalahan pada sistem
 - Meningkatkan kualitas perangkat lunak
 
-**_Fungsi Github_ **
+**_Fungsi Github_**
 Github digunakan sebagai medida komunikasi antara programmer dan software quality tester, penyimpanan dokumen pengujian, pencatatan bug, serta dokumentasi hasil pengujian sebelum dibuat final report.
