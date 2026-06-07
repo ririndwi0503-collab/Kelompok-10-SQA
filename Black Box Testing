@@ -1,0 +1,21 @@
+# Black Box Testing
+
+## Objek Pengujian
+
+1. Login
+2. Register
+3. Home
+
+## Skenario Pengujian
+
+- Login dengan data benar
+- Login dengan password salah
+- Login dengan username kosong
+- Register dengan data lengkap
+- Register dengan data kosong
+
+## Metode
+
+- Functional Testing
+- Equivalence Partitioning
+- Boundary Value Analysis
