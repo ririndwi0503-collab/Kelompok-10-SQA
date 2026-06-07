@@ -1,6 +1,6 @@
-***Kelompok - 10 SQA*
-_Dokumentasi Software Quality EMart_
-**
+**Kelompok - 10 SQA**
+**Dokumentasi Software Quality EMart**
+
 Repository ini digunakan untuk mendokumentasikan proses Software Quality Testing pada aplikasi EMart
 
 **_Metode Pengujian:_**
