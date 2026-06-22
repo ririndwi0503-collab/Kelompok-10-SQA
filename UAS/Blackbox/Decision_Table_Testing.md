@@ -1,3 +1,13 @@
-# Decision Table Testing
+# DECISION TABLE TESTING
 
-Dokumentasi pengujian Decision Table Testing pada aplikasi eMart.
+## Tabel Keputusan
+
+| Username | Password | Output |
+|-----------|----------|---------|
+| Benar | Benar | Login Berhasil |
+| Benar | Salah | Login Gagal |
+| Salah | Benar | Login Gagal |
+| Salah | Salah | Login Gagal |
+
+## Kesimpulan
+Logika login berjalan sesuai aturan.
