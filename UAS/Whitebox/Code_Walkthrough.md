@@ -1,3 +1,4 @@
-# Code Walkthrough
+Kode validasi email register
 
-Dokumentasi pengujian Code Walkthrough pada aplikasi eMart.
+Jika email mengandung @ maka registrasi berhasil.
+Jika tidak mengandung @ maka registrasi ditolak.
