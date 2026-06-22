@@ -1,13 +1,18 @@
-# DECISION TABLE TESTING
+# Decision Table Testing
+
+## Definisi
+
+Decision Table Testing digunakan untuk menguji kombinasi kondisi dan keputusan yang dihasilkan sistem.
 
 ## Tabel Keputusan
 
-| Username | Password | Output |
-|-----------|----------|---------|
-| Benar | Benar | Login Berhasil |
-| Benar | Salah | Login Gagal |
-| Salah | Benar | Login Gagal |
-| Salah | Salah | Login Gagal |
+| Rule | Username | Password | Hasil |
+|--------|---------|---------|---------|
+| R1 | Benar | Benar | Login Berhasil |
+| R2 | Benar | Salah | Login Gagal |
+| R3 | Salah | Benar | Login Gagal |
+| R4 | Salah | Salah | Login Gagal |
 
 ## Kesimpulan
-Logika login berjalan sesuai aturan.
+
+Seluruh keputusan sistem pada proses login sesuai dengan aturan yang ditentukan.
